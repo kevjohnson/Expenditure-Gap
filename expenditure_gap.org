@@ -1,0 +1,103 @@
+* Tasks
+** DONE Download MEPS data
+CLOSED: [2015-06-14 Sun 18:30]
+** TODO Load data into R and see if we can find anything
+** TODO Email Julie and Nicoleta with results
+
+
+* General Notes
+Inspiration: [[http://www.washingtonpost.com/national/health-science/why-some-hospitals-can-get-away-with-price-gouging-patients-study-finds/2015/06/08/b7f5118c-0aeb-11e5-9e39-0db921c47b93_story.html][WaPo article]] 
+Data Source:[[http://meps.ahrq.gov/mepsweb/data_stats/download_data_files.jsp][ MEPS Data Download]] 
+MEPS includes both charges and payments
+Charges are the dollar amounts asked for a service by a health care provider
+Expenditures are comprised of direct payments, not charge
+
+* Variable Documentation
+** Outpatient Data: [[http://meps.ahrq.gov/mepsweb/data_stats/download_data/pufs/h152f/h152fcb.pdf][Link]] 
+*** DRSPLTY
+OPAT Doctor's Specialty
+-9 Not Ascertained
+-8 DK
+-7 Refused
+-1 Inapplicable
+Too long to list here, see documentation
+
+*** VSTCTGRY
+Best category for care patient received on visit data
+-9 not ascertained
+-8 dk
+-1 inapplicable
+1 general checkup
+2 diagnosis or treatment
+3 emergency
+4 psychotherapy/mental health counseling
+5 follow-up or post-operative visit
+6 immunizations or shots
+7 vision exam
+8 pregnancy-related
+9 well child exam
+10 laser eye surgery
+91 other
+*** OPICD1X
+3-digit ICD-9-CM condition code
+-1 inapplicable
+-9 not ascertained
+*** OPCCC1X
+Modified clinical classification code
+-1 inapplicable
+-9 not ascertained
+*** OPXP12X
+Total expenditures for event
+-1 inapplicable
+*** OPTC12X
+Total charges for event
+-1 inapplicable
+*** OPFSF12X
+Facility amount paid, family
+*** OPFMR12X
+Facility amount paid, medicare
+*** OPFMD12X
+Facility amount paid, medicaid
+*** OPFPV12X
+Facility amount paid, private insurer
+*** OPFVA12X
+Facility amount paid, veteran/champva
+*** OPFTR12X
+Facility amount paid, tricare
+*** OPFOF12X
+Facility amount paid, other federal
+*** OPFSL12X
+Facility amount paid, state/local government
+*** OPFWC12X
+Facility amount paid, workers compensation
+*** OPFOR12X
+Facility amount paid, other private
+*** OPFOU12X
+Facility amount paid, other public
+*** OPFOT12X
+Facility amount paid, other insurance
+*** OPFXP12X
+Facility sum payments
+*** OPDSF12X Doctor amount paid, family 
+*** OPDMR12X Doctor amount paid, medicare 
+*** OPDMD12X Doctor amount paid, medicaid 
+*** OPDPV12X
+Doctor amount paid, private insurance
+*** OPDVA12X
+Doctor amount paid, veterans/champva
+*** OPDTR12X
+Doctor amount paid, tricare
+*** OPDOF12X
+Doctor amount paid, other federal
+*** OPDSL12X
+Doctor amount paid, state/local government
+*** OPDWC12X
+Doctor amount paid, Workers compensation
+*** OPDOR12X
+Doctor amount paid, other private
+*** OPDOU12X
+Doctor amount paid, other public
+*** OPDOT12X
+Doctor amount paid, other insurance
+*** OPDXP12X
+Doctor sum payments
